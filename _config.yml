@@ -1,0 +1,54 @@
+theme: jekyll-theme-chirpy
+
+lang: en
+timezone: # Set your timezone e.g. Asia/Kolkata
+
+title: Bits & Builds
+tagline: Build cool stuff. Share what you learn.
+description: >-
+  A blog by Pranav about building projects, learning new tech, and sharing
+  the journey — one bit at a time.
+
+url: "https://suryadevarapranav.github.io"
+baseurl: ""
+
+github:
+  username: suryadevarapranav
+
+social:
+  name: Pranav Suryadevar
+  links:
+    - https://github.com/suryadevarapranav
+
+theme_mode: # [light | dark] — leave blank to follow system preference
+
+avatar: # /assets/img/avatar.png — add your photo later
+
+toc: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _tabs
+      type: pages
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+paginate: 10
