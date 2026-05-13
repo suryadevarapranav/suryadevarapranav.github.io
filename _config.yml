@@ -22,7 +22,7 @@ social:
 
 theme_mode:
 
-avatar:
+avatar: /assets/img/avatar.png
 
 toc: true
 
@@ -43,11 +43,24 @@ defaults:
       toc: true
       permalink: /posts/:title/
   - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
       path: ""
       type: tabs
     values:
       layout: page
       permalink: /:title/
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
 
 sass:
   style: compressed
