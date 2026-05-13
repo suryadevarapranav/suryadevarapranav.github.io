@@ -20,11 +20,13 @@ social:
   links:
     - https://github.com/suryadevarapranav
 
-theme_mode: # [light | dark] — leave blank to follow system preference
+theme_mode:
 
-avatar: # /assets/img/avatar.png — add your photo later
+avatar:
 
 toc: true
+
+paginate: 10
 
 defaults:
   - scope:
@@ -34,7 +36,6 @@ defaults:
       layout: post
       comments: true
       toc: true
-      permalink: /posts/:title/
   - scope:
       path: _tabs
       type: pages
@@ -44,11 +45,3 @@ defaults:
 
 sass:
   style: compressed
-
-plugins:
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-paginate: 10
