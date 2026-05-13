@@ -28,6 +28,11 @@ toc: true
 
 paginate: 10
 
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
 defaults:
   - scope:
       path: ""
@@ -38,8 +43,8 @@ defaults:
       toc: true
       permalink: /posts/:title/
   - scope:
-      path: _tabs
-      type: pages
+      path: ""
+      type: tabs
     values:
       layout: page
       permalink: /:title/
