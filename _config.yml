@@ -36,6 +36,7 @@ defaults:
       layout: post
       comments: true
       toc: true
+      permalink: /posts/:title/
   - scope:
       path: _tabs
       type: pages
